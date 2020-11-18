@@ -1,0 +1,34 @@
+.upload-btn {
+  width: 120px;
+}
+.drag {
+	width: 100%;
+	height: 100px;
+	border: 2px dashed #b2b2b2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.ext-highlight {
+  color: red; 
+  font-weight: bolder
+}
+.cube {
+	width: 18px;
+	height: 18px;
+	border: 1px solid grey;
+	float: left;
+	margin: 0 2px 2px 0;
+	position: relative;
+	.progress {
+		position: absolute;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		height: 0px;
+		background: orange;
+	}
+}
+.success {
+	background: lightgreen;
+}
