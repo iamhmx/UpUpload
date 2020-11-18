@@ -1,6 +1,4 @@
-## UpUpload.js
-
----
+# UpUpload.js
 
 `vue + koa` 实现文件上传
 
@@ -40,6 +38,4 @@ yarn start_node
 
 ### 效果
 
-<video controls="" preload="none" width="100%">
-  <source src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-aliyun-eewtwzjb1bxvad91bd/29cee630-2980-11eb-b997-9918a5dda011.mov">
-</video>
+<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-aliyun-eewtwzjb1bxvad91bd/5f467640-2983-11eb-b997-9918a5dda011.gif" style="width: 100%">
