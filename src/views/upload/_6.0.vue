@@ -23,7 +23,7 @@
 		<br />
 		<UploadBtn :file="file" @upload="upload"></UploadBtn>
 		<br />
-		<Progress :percentage="percentage"></Progress>
+		<!-- <Progress :percentage="percentage"></Progress> -->
 		<br />
 		<CubeProgress :chunks="chunks"></CubeProgress>
 	</div>
