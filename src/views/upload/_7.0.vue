@@ -23,7 +23,7 @@
 		<br />
 		<UploadBtn :file="file" @upload="upload"></UploadBtn>
 		<br />
-		<Progress :percentage="percentage"></Progress>
+		<Progress :percentage="totalProgress"></Progress>
 		<br />
 		<CubeProgress :chunks="chunks"></CubeProgress>
 	</div>
@@ -40,6 +40,17 @@ export default {
 			percentage: 0,
 			chunks: [],
 		}
+	},
+	computed: {
+		totalProgress() {
+			if (!this.file || this.chunks.length === 0) {
+				return 0
+			}
+			const loaded = this.chunks
+				.map((item) => (item.file.size * item.progress) / 100)
+				.reduce((acc, cur) => acc + cur, 0)
+			return parseInt(((loaded * 100) / this.file.size).toFixed(2))
+		},
 	},
 	methods: {
 		getSize(size) {

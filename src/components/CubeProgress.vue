@@ -3,7 +3,11 @@
  * @Date: 2020-11-18 15:35:10
 -->
 <template>
-	<div v-if="chunks.length > 0" :style="`width:${cubeWidth}px`">
+	<div
+		v-if="chunks.length > 0"
+		:style="`width:${cubeWidth}px; overflow: auto;`"
+	>
+		<div style="margin-bottom: 5px">切片进度：</div>
 		<div v-for="item in chunks" :key="item.index" class="cube">
 			<div class="progress" :style="getStyle(item)"></div>
 		</div>
@@ -21,7 +25,7 @@ export default {
 	},
 	computed: {
 		cubeWidth() {
-			return Math.ceil(Math.sqrt(this.chunks.length)) * 22
+			return Math.min(Math.ceil(Math.sqrt(this.chunks.length)) * 22, 540)
 		},
 	},
 	methods: {

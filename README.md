@@ -38,4 +38,4 @@ yarn start_node
 
 ### 效果
 
-<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-aliyun-eewtwzjb1bxvad91bd/5f467640-2983-11eb-b997-9918a5dda011.gif" style="width: 100%">
+<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-aliyun-eewtwzjb1bxvad91bd/11586f60-2a0a-11eb-b997-9918a5dda011.gif" style="width: 100%">

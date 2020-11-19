@@ -4,6 +4,7 @@
 -->
 <template>
 	<div>
+		<div style="margin-bottom: 5px">总进度：</div>
 		<el-progress
 			:stroke-width="18"
 			:text-inside="true"
