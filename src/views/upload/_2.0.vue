@@ -22,9 +22,6 @@
 		<UploadBtn :file="file" @upload="upload"></UploadBtn>
 		<br />
 		<Progress :percentage="percentage"></Progress>
-		<!-- <p v-show="imageUrl">
-			<img :src="`http://localhost:3009/${imageUrl}`" style="width: 600px" />
-		</p> -->
 	</div>
 </template>
 
